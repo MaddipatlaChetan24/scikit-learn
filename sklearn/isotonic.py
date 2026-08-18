@@ -12,7 +12,12 @@ from scipy import interpolate, optimize
 from scipy.stats import spearmanr
 
 from sklearn._isotonic import _inplace_contiguous_isotonic_regression, _make_unique
-from sklearn.base import BaseEstimator, RegressorMixin, TransformerMixin, _fit_context
+from sklearn.base import (
+    BaseEstimator,
+    RegressorMixin,
+    TransformerMixin,
+    _fit_context,
+)
 from sklearn.utils import check_array, check_consistent_length, metadata_routing
 from sklearn.utils._param_validation import Interval, StrOptions, validate_params
 from sklearn.utils.fixes import parse_version, sp_base_version
